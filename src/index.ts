@@ -150,7 +150,7 @@ export class Cryptomus {
         const signatue = createHash( 'md5' )
             .update(
                 Buffer.from(
-                    JSON.stringify( data ).replace( /\//g, '\\/' ),
+                    JSON.stringify( data ),
                 ).toString( 'base64' ) + key,
             )
             .digest( 'hex' );
