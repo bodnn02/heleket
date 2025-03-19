@@ -23,7 +23,7 @@ export class Cryptomus {
         try {
             let response = await axios.request({
                 method,
-                url: `https://api.cryptomus.com/${route}`,
+                url: `https://api.heleket.com/${route}`,
                 params: method === E_HTTP.GET ? data : undefined,
                 data: method === E_HTTP.POST ? JSON.stringify(data) : undefined,
                 headers: {
